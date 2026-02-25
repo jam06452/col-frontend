@@ -169,6 +169,54 @@ body {
     z-index: 1;
 }
 
+/* TEAM */
+.team {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 100px 40px;
+}
+
+.team h2 {
+    font-size: 3rem;
+    color: var(--heading);
+    margin-bottom: 60px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.team-card {
+    border: 3px solid var(--border);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+}
+
+.team-image {
+    width: 100%;
+    height: 186px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: block;
+    aspect-ratio: 197 / 186;
+}
+
+.team-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.team-card p {
+    color: var(--text-light);
+    line-height: 1.8;
+    font-size: 14px;
+}
+
 /* SERVICES */
 .services {
     max-width: 1400px;
@@ -261,58 +309,43 @@ body {
     color: var(--text-dark);
     transition: transform 0.3s;
     cursor: pointer;
+    overflow: hidden;
+    padding: 0;
+    text-decoration: none;
+}
+
+.portfolio-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.portfolio-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.portfolio-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: var(--white);
+    margin: 0;
+    padding: 12px;
+    font-size: 16px;
+    text-align: center;
 }
 
 .portfolio-item:hover {
     transform: scale(1.05);
-}
-
-/* TEAM */
-.team {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 100px 40px;
-}
-
-.team h2 {
-    font-size: 3rem;
-    color: var(--heading);
-    margin-bottom: 60px;
-}
-
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.team-card {
-    border: 3px solid var(--border);
-    border-radius: 12px;
-    padding: 30px;
-    text-align: center;
-}
-
-.team-image {
-    width: 100%;
-    height: 186px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    display: block;
-    aspect-ratio: 197 / 186;
-}
-
-.team-card h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: var(--text-dark);
-}
-
-.team-card p {
-    color: var(--text-light);
-    line-height: 1.8;
-    font-size: 14px;
 }
 
 /* TRAINING */
